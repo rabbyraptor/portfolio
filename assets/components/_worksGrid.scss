@@ -1,0 +1,11 @@
+.works-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1em;
+    column-gap: 1em;
+    margin-bottom:32px;
+    padding:0 5%;
+    .work{
+        height:300px;
+    }
+}
