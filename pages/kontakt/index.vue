@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import contactForm from "../components/contactForm";
+import contactForm from "../../components/contactForm"
 export default {
   components:{
     contactForm
