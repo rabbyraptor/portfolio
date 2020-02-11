@@ -2,12 +2,11 @@
   <div class="container">
     <div class="hero-image bg-hero">
       <div class="hero-title">
-        <h1 class="title">Kompetencer</h1>
+        <h1 class="title">Mine kompetencer</h1>
       </div>
     </div>
     <section class="bg-section">
       <div class="bg-grid">
-        <h2>Mine kompetencer</h2>
         <background-grid :background="skillset" />
       </div>
     </section>
