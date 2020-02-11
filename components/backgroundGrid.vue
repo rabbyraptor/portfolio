@@ -4,7 +4,7 @@
         <ul>
           <li class="uddannelse" v-for="entry in background">
             <a :href="getUrl(entry.url)" target="_blank">
-              <img v-if="entry.placeLogo != ''" :src="'img/baggrund/' + entry.placeLogo" data-aos="fade-right" data-aos-offset="100">
+              <img v-if="entry.placeLogo != ''" :src="'@/img/baggrund/' + entry.placeLogo" data-aos="fade-right" data-aos-offset="100">
             </a>
             <div data-aos="fade-left" data-aos-offset="100">
               <h3>{{ entry.title }}</h3>
