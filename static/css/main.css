@@ -358,4 +358,96 @@ h2 {
 .uddannelse .bg-description {
   margin-top: 8px;
 }
+
+.contact-wrapper {
+  max-width: 600px;
+  padding: 0 5%;
+  margin: 32px auto 64px auto;
+}
+
+.contact-intro {
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+.contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: left;
+}
+
+.contact-form p {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.contact-form input, .contact-form textarea {
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 2%;
+}
+
+.contact-form input {
+  height: 50px;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  max-width: 100%;
+  font-size: 16px;
+}
+
+.contact-form button.send-button {
+  height: 50px;
+  width: 50%;
+  -ms-grid-column-align: right;
+      justify-self: right;
+  font-size: 16px;
+  background-color: #2c3e50;
+  color: white;
+  font-weight: 600;
+}
+
+.contact-preview {
+  text-align: left;
+  border: 1px solid grey;
+  margin: auto;
+  padding: 5%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -webkit-column-gap: 2em;
+          column-gap: 2em;
+}
+
+.contact-preview .to, .contact-preview .from {
+  font-weight: 600;
+}
+
+.contact-preview .from-email {
+  font-style: italic;
+}
+
+@media only screen and (min-width: 700px) {
+  .works-grid {
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .works-grid {
+    width: 1260px;
+  }
+}
 /*# sourceMappingURL=main.css.map */

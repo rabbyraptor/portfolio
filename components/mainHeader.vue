@@ -30,7 +30,7 @@ export default {
         },
         {
           name: "Kontakt",
-          url: "/"
+          url: "/kontakt"
         },
         
       ]
