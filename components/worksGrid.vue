@@ -1,45 +1,31 @@
 <template>
-  <div class="works-grid">
-      <div v-for="work in works" class="work" :style="'background-color:' + work.color">
-          <h3>
-              {{ work.title }}
-          </h3>
+  <div>
+    <div class="works-grid">
+      <div v-for="work in works" class="work">
+        <a :href="getUrl(work.url)" target="_blank">
+          <img class="work-image" :src="'img/' + work.type + '/' + work.image" data-aos="fade-up" />
+        </a>
+        <h3 class="work-title">{{ work.title }}</h3>
+        <p class="work-description">{{ work.description }}</p>
       </div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-    data(){
-        return{
-            works:[
-                {
-                    title: "Work 1",
-                    color: "brown"
-                },
-                {
-                    title: "Work 2",
-                    color: "blue"
-                },
-                {
-                    title: "Work 3",
-                    color: "green"
-                },
-                {
-                    title: "Work 4",
-                    color: "yellow"
-                },
-                {
-                    title: "Work 5",
-                    color: "teal"
-                },
-                
-            ]
-        }
+  props: {
+    works: {}
+  },
+  methods: {
+    getUrl(url) {
+      if (url != "") {
+        return "https://" + url;
+      }
     }
-}
+  }
+};
 </script>
 
 <style>
-
 </style>

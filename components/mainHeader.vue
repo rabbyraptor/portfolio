@@ -4,7 +4,7 @@
       <nuxt-link to="/" style="text-transform:capitalize">Mathias Hammer | {{ this.$route.name }}</nuxt-link>
     </div>
     <nav>
-      <nuxt-link v-for="link in links" :to="link.url" :key="link.index">{{ link.name }}</nuxt-link>
+      <nuxt-link v-for="link in links" :to="link.url" :key="link.index" class="hvr-underline-from-center">{{ link.name }}</nuxt-link>
     </nav>
   </header>
 </template>
@@ -25,6 +25,10 @@ export default {
           url: "/baggrund"
         },
         {
+          name: "Kompetencer",
+          url: "/kompetencer"
+        },
+        {
           name: "Kontakt",
           url: "/"
         },
@@ -35,7 +39,7 @@ export default {
   mounted() {
     const header = document.querySelector("header");
     const options = {
-      offset: 180,
+      offset: 120,
       tolerance: {
         up: 300,
         down: 10
