@@ -1,7 +1,7 @@
 <template>
   <header class="headroom">
     <div class="header-info">
-      <nuxt-link to="/" style="text-transform:capitalize">Mathias Hammer | {{ this.$route.name }}</nuxt-link>
+      <nuxt-link to="/" style="text-transform:capitalize">Mathias Hammer</nuxt-link>
     </div>
     <nav>
       <nuxt-link v-for="link in links" :to="link.url" :key="link.index" class="hvr-underline-from-center">{{ link.name }}</nuxt-link>
