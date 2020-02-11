@@ -4,7 +4,7 @@
       <h3>Send mig en besked!</h3>
       <p>Har du noget på hjerte? Kom i kontakt med mig ved at udfylde formularen herunder, så vender jeg tilbage snarest.</p>
     </div>
-    <form class="contact-form" name="contact" netlify action="/kontakt/success">
+    <form class="contact-form" name="contact" data-netlify="true" action="/kontakt/success">
       <div>
         <p>Hvad er dit navn?</p>
         <input type="text" name="name" placeholder="fx. George Harrison" required />
